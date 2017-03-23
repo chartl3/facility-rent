@@ -1,6 +1,6 @@
 # facility-rent
 Web App for renting school facilities nationwide 
-Capabilities will include but not limited to, 
+Capabilities will include but not limited to:
 
 Capability of renting multiple facilities in schools such as field, gym, cafe, auditorium
 Capability to give stats for each facility such as weight/occupancy capacity 
