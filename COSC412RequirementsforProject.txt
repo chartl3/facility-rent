@@ -1,0 +1,62 @@
+﻿COSC412 Project Requirements Document
+
+
+Team:   Ethan Allen, Gihad Elgendy, Brittany Galata, Connor Graff, Charles Hartley, Collin Houlihan, Tanner Krebs
+
+________________
+
+
+Requirements
+Functional Requirements
+Primary:
+1. Login as either a system administrator, school or user
+2. Different user roles:
+* System Administrator: The admin can shutdown the website, remove schools, remove users, remove counties. Impose new website wide rules and send out website wide alerts. Responsible for providing updates to the site. 
+* School Administrator: Capability of approving purchases, canceling appointments, providing refunds, remove people from discussions, or ban anyone from any school related posts. Capable of banning IP addresses. Allowed to delete reported items and block users/events.
+* Standard User: Ability make their own account. Capability to request the ability to rent a facility. Capability to rate facility once they actually rent the facility. Capable of sharing events to friends.
+1. Capability of renting multiple facilities in schools such as field, gym, cafe, auditorium
+2. Capability to give stats for each facility such as weight/occupancy capacity 
+3. A reporting capability to determine which is the highest grossing facility
+4. Capability to post pictures and videos of each area
+5. Capability to edit or cancel an existing reservation
+6. All lists should be searchable, sortable by column, and filterable
+7. Capability of maintaining social media mentions
+8. Allow event notifications and the ability for users to turn notifications on/off
+9. The ability to rate/review both facilities and the renters of the facilities
+10. The ability for users to report items such as comments, other users, and events
+11. Admins allowed to delete reported items and block users/events
+12. Capability to accept online donations to support events and facilities
+13. A new user is added when they add their email, password and password confirmation. There will also be a capability of checking if they are not a robot to prevent someone from trying to make multiple fake accounts, and spamming the systems
+
+
+Secondary:
+1. Information on what services are provided with reservation such as catering/janitorial services
+2. Social media share button
+3. Add a “save for later” button such as a heart to add to a user's considerations list
+4. Integrate Google maps to add proximity search capabilities
+5. Integrate Google maps to provide directions to school right from the website
+6. Allow schools to promote events (like track meets, recitals, etc.) and allow sponsors to register
+7. Auction capability if a school is having trouble renting certain facilities for a set price
+
+
+Non-Functional Requirements
+Primary:
+1. The Website must accept all four major credit cards. 
+   1. MasterCard
+   2. Visa
+   3. American Express
+   4. Discover
+1. Implement secure payment - Stripe 
+2. Account security - lock account after 3 login attempts
+3. Ability to support all browsers and platforms such as IE, Chrome, Firefox, Safari and Mac, PC
+4. A mobile friendly version of the webpage for advanced smartphones
+5. Response time, how long does it take for the App to load, refresh rates.
+6. Recoverability - Save current progress if the website crashes.
+7. Database to store log-in information / payment history. Donations as well. 
+8. A school can be added by logging in with a unique login that they received via email
+Secondary:
+1. Must meet all industry and safety regulations
+2. Submit request to rent a particular facility status changes to pending approval
+3. Purchase approval required by school appointed administrators before rental of facility can be confirmed
+4. Receive email confirmation of purchase and status change from pending to purchase approved (More details in Functional Requirements Primary number 18)
+5. A user can schedule an event by picking an opening on the calendar of a facility of a school and picking an open spot entering the required amount of money. Then they will have an order status one will be incomplete which is they haven’t submitted a valid request, another is pending approval which is when they send a valid request and all they have to do now is wait for the school admin of the website approval. Then once the the school admin approves it will say purchase approved, and if not approved it will say purchase disapproved with the  capability of the school admin to send them a message why it was disapproved. There will also be the status of Please contact school if the facility suddenly can’t be given to them at that time and the school wants to discuss alternatives with them. Then there is just the status of canceled where the school just cancels it and doesn’t provide any other method to contact them to reschedule. They can provide a message why in that scenario to.
