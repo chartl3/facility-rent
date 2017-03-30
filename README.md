@@ -14,3 +14,8 @@ The ability to rate/review both facilities and the renters of the facilities
 The ability for users to report items such as comments, other users, and events
 Admins allowed to delete reported items and block users/events
 Capability to accept online donations to support events and facilities.
+
+To log into our Amazon Linux AMI ec2 instance. 
+macOS X users: ssh -i keypair.pem ec2-user@OurPublicDNS
+If you use shitty microsoft windows, well just throw your computer into the nearest wall. 
+
