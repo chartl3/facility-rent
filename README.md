@@ -1,95 +1,149 @@
-# facility-rent
-Web App for renting school facilities nationwide 
-Capabilities will include but not limited to:
+<p align="center">
+  <a href="https://v4-alpha.getbootstrap.com">
+    <img src="http://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width=72 height=72>
+  </a>
 
-Capability of renting multiple facilities in schools such as field, gym, cafe, auditorium
-Capability to give stats for each facility such as weight/occupancy capacity 
-A reporting capability to determine which is the highest grossing facility
-Capability to post pictures and videos of each area
-Capability to edit or cancel an existing reservation
-All lists should be searchable, sortable by column, and filterable
-Capability of maintaining social media mentions
-Allow event notifications and the ability for users to turn notifications on/off
-The ability to rate/review both facilities and the renters of the facilities
-The ability for users to report items such as comments, other users, and events
-Admins allowed to delete reported items and block users/events
-Capability to accept online donations to support events and facilities.
+  <h3 align="center">Bootstrap</h3>
 
-To log into our Amazon Linux AMI ec2 instance. 
-macOS X users: ssh -i keypair.pem ec2-user@OurPublicDNS
-If you use shitty microsoft windows, well just throw your computer into the nearest wall. 
+  <p align="center">
+    Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+    <br>
+    <a href="https://v4-alpha.getbootstrap.com"><strong>Visit Bootstrap &raquo;</strong></a>
+  </p>
+</p>
 
-Please put what Windows users have to do. Also shouldn't we put our reequirements on here. 
-******************************************************************************************************
-*                                                                                                    *
-*                                                                                                    *
-*                                 HERE ARE THE REQUIREMENTS                                          *
-*                                                                                                    *
-*                                                                                                    *
-******************************************************************************************************
-COSC412 Project Requirements Document
+<br>
 
-Team:   Ethan Allen, Gihad Elgendy, Brittany Galata, Connor Graff, Charles Hartley, Collin Houlihan, Tanner Krebs
-________________________________________
+## Table of contents
 
-Requirements
-Functional Requirements
-Primary:
-1.	Capability of allowing school administrators to serve as moderators for the website via elevated permissions
-2.	School-sanctioned moderators will be capable of posting facility related information such as:
-a.	Times
-b.	Pricing
-c.	Occupancy
-d.	Pictures/Videos of facilities
-e.	Specific restrictions (no beverages, alcohol free, etc.)
-3.	Users should be capable of purchasing a facility rental chosen from the listings
-4.	Attendees of events must be capable of purchasing tickets to scheduled events
-5.	Website visitors should be able to browse publicly posted events
-6.	Renters should have ability to privatize their events (hide them from public view)
-7.	Capability of renting multiple facilities in school such as field, gym, cafe, auditorium
-8.	A reporting capability to determine which is the highest grossing facility
-9.	Capability to cancel an existing reservation
-10.	All lists should be searchable, sortable by column, and filterable
-11.	Capability of allowing users the option to “share” on social media
-12.	Allow event notifications and the ability for users to turn notifications on/off
-13.	The ability to rate/review both facilities and the renters of the facilities
-14.	The ability for users to report items such as comments, other users, and event
-15.	Moderators allowed to delete reported items and block users/events.
-16.	Website maintenance following launch (for a designated period of time thereafter)
+- [Quick start](#quick-start)
+- [Status](#status)
+- [What's included](#whats-included)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Community](#community)
+- [Versioning](#versioning)
+- [Creators](#creators)
+- [Copyright and license](#copyright-and-license)
 
-Secondary:
-1.	Information on what services are provided with reservation such as catering/janitorial services
-2.	Social media share button
-3.	Add a “save for later” button such as a heart to add to a user's considerations list
-4.	Integrate Google maps to add proximity search capabilities
-5.	Integrate Google maps to provide directions to school right from the website
-6.	Allow schools to promote events (like track meets, recitals, etc.) and allow sponsors to register
-7.	Auction capability if a school is having trouble renting certain facilities for a set price
+## Quick start
 
-Non-Functional Requirements
-Primary:
-2.	The Website must accept all four major credit cards. 
-a.	MasterCard
-b.	Visa
-c.	American Express
-d.	Discover
-3.	Ability to support all browsers and platforms such as IE, Chrome, Firefox, Safari and Mac, PC
-4.	A mobile friendly version of the webpage for advanced smartphones
-5.	Security measures to protect user information such as:
-a.	Usernames and Passwords
-b.	Payment Information
-c.	Malicious Cyber-Attacks (DDOS, unauthorized server access, etc.)
-This can be achieved by utilizing encryption, firewalls, two-step verification, etc.
+Several quick start options are available:
 
-Secondary:
-1.	Must meet all industry and safety regulations
-2.	Each renting transaction requires approval of school administrator based conditions 
-such as:
-       a.	Telephone verification with event coordinator (customer)
-       b.	School-appropriate event
-       c.	Agreement to facility policies
+- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.6.zip)
+- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+- Install with [npm](https://www.npmjs.com): `npm install bootstrap@4.0.0-alpha.6`
+- Install with [yarn](https://github.com/yarnpkg/yarn): `yarn add bootstrap@4.0.0-alpha.6`
+- Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap:4.0.0-alpha.6`
+- Install with [Bower](https://bower.io): `bower install bootstrap#v4.0.0-alpha.6`
+- Install with [NuGet](https://www.nuget.org): CSS: `Install-Package bootstrap -Pre` Sass: `Install-Package bootstrap.sass -Pre` (`-Pre` is only required until Bootstrap v4 has a stable release).
+
+Read the [Getting started page](https://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
+
+## Status
+
+[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
+![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
+[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
+[![Gem version](https://img.shields.io/gem/v/bootstrap.svg)](https://rubygems.org/gems/bootstrap)
+[![Build Status](https://img.shields.io/travis/twbs/bootstrap/v4-dev.svg)](https://travis-ci.org/twbs/bootstrap)
+[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=dev)
+[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue.svg)](https://atmospherejs.com/twbs/bootstrap)
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
+[![NuGet](https://img.shields.io/nuget/vpre/bootstrap.svg)](https://www.nuget.org/packages/bootstrap/4.0.0-alpha5)
+
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
+
+## What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   └── bootstrap.min.css.map
+└── js/
+    ├── bootstrap.js
+    └── bootstrap.min.js
+```
+
+We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools.
 
 
+## Bugs and feature requests
+
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+
+
+## Documentation
+
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com) and publicly hosted on GitHub Pages at <https://getbootstrap.com>. The docs may also be run locally.
+
+### Running documentation locally
+
+1. Run through the [tooling setup](https://github.com/twbs/bootstrap/blob/v4-dev/docs/getting-started/build-tools.md#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+2. Run `grunt` (or a specific set of Grunt tasks) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
+3. From the root `/bootstrap` directory, run `bundle exec jekyll serve` in the command line.
+4. Open <http://localhost:9001> in your browser, and voilà.
+
+Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+
+### Documentation for previous releases
+
+Documentation for v2.3.2 has been made available for the time being at <https://getbootstrap.com/2.3.2/> while folks transition to Bootstrap 3.
+
+[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
 
 
 
+## Contributing
+
+Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+
+Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/master/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
+
+Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+
+
+
+## Community
+
+Get updates on Bootstrap's development and chat with the project maintainers and community members.
+
+- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
+- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com).
+- Join [the official Slack room](https://bootstrap-slack.herokuapp.com).
+- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
+- Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
+- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
+
+
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
+
+See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com) contain summaries of the most noteworthy changes made in each release.
+
+
+## Creators
+
+**Mark Otto**
+
+- <https://twitter.com/mdo>
+- <https://github.com/mdo>
+
+**Jacob Thornton**
+
+- <https://twitter.com/fat>
+- <https://github.com/fat>
+
+
+
+## Copyright and license
+
+Code and documentation copyright 2011-2017 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
