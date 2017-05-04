@@ -12,7 +12,7 @@
     <![endif]-->
   </head>
   <body>
-    <h1>HonEdu</h1>
+    <h1>HoneyDew.EDU</h1>
 <nav class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
 		<div class="navbar-header">
@@ -36,7 +36,7 @@
 					</ul>
 				</li>
 				<li><a href="contact.php">Contact</a></li>
-				<li><a href="index2.php">Login</a></li>
+				<li><a href="indexlogin.php">Login</a></li>
 			</ul>
 		</div>
 	</div>
