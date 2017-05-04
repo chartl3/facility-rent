@@ -1,56 +1,48 @@
+<?php
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
+ 
+sec_session_start();
+ 
+if (login_check($mysqli) == true) {
+    $logged = 'in';
+} else {
+    $logged = 'out';
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>HonEdu</h1>
-<nav class="navbar navbar-inverse navbar-static-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Facility Rental</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Development</a></li>
-						<li><a href="#">Consulting</a></li>
-					</ul>
-				</li>
-				<li><a href="index2.php">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
-<div class="jumbotron">
-	<div class="container">
-		<h1>Ready. Set. Rent.</h1>
-		<p>Your go-to for public facility rental and use for?</p>
-		<br>
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">Download Free Trial »</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-	</div>
-</div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-<a href="index2.php"> <input type="button" value="Login in" /></a>
-  </body>
+<html>
+    <head>
+        <title>Secure Login: Log In</title>
+        <link rel="stylesheet" href="styles/main.css" />
+        <script type="text/JavaScript" src="js/sha512.js"></script> 
+        <script type="text/JavaScript" src="js/forms.js"></script> 
+    </head>
+    <body>
+        <?php
+        if (isset($_GET['error'])) {
+            echo '<p class="error">Error Logging In!</p>';
+        }
+        ?> 
+        <form action="includes/process_login.php" method="post" name="login_form">                      
+            Email: <input type="text" name="email" />
+            Password: <input type="password" 
+                             name="password" 
+                             id="password"/>
+            <input type="button" 
+                   value="Login" 
+                   onclick="formhash(this.form, this.form.password);" /> 
+        </form>
+ 
+<?php
+        if (login_check($mysqli) == true) {
+                        echo '<p>Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.</p>';
+ 
+            echo '<p>Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
+        } else {
+                        echo '<p>Currently logged ' . $logged . '.</p>';
+                        echo "<p>If you don't have a login, please <a href='register.php'>register</a></p>";
+                }
+?>
+    </body>
 </html>
