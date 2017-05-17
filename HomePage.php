@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>HoneyDew Home Page</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -12,7 +12,6 @@
     <![endif]-->
   </head>
   <body>
-    <h1>HoneyDew.EDU</h1>
 	  <img src="HoneyDew3..png" width="120" height="90" alt="HoneyDew">
 <nav class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
