@@ -12,35 +12,39 @@
     <![endif]-->
   </head>
   <body>
-	  <img src="HoneyDew3..png" width="120" height="90" alt="HoneyDew">
-<nav class="navbar navbar-inverse navbar-static-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Facility Rental</a>
+	<!-- HoneyDew Banner -->    
+	<img src="Website Banner.png" width="120" height="90" alt="HoneyDew">
+	  
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<label>Services</label>
+				     <select id = "myList">
+				       <option value = "1">Design</option>
+				       <option value = "2">Development</option>
+				       <option value = "3">Consulting</option>
+				       <option value = "4">Search Schools</option>
+				     </select>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">About</a></li>
+					<li><a href="contact.php">Contact</a></li>
+					<li><a href="indexlogin.php">Login</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Development</a></li>
-						<li><a href="#">Consulting</a></li>
-					</ul>
-				</li>
-				<li><a href="contact.php">Contact</a></li>
-				<li><a href="indexlogin.php">Login</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+	</nav>
+	  
 <div class="jumbotron">
 	<div class="container">
 		<h1>Ready. Set. Rent.</h1>
