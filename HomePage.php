@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>HoneyDew.EDU</h1>
-	  <img src="HoneyDew3.png" width="120" height="90" alt="HoneyDew">
+	  <img src="HoneyDew3..png" width="120" height="90" alt="HoneyDew">
 <nav class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
 		<div class="navbar-header">
